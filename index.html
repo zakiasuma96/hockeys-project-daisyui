@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hokey Project with DaisyUI </title>
+
+  <!-- fabicon -->
   <link rel="shortcut icon" href="Images/10.png" type="image/x-icon">
 
   <!-- daisy & tailwind cdn -->
@@ -11,7 +13,15 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
-  
+  <!-- google fonts manrope  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" 
+  rel="stylesheet">
+
+  <!-- font-awesome -->
+  <script src="https://kit.fontawesome.com/5985a56132.js" crossorigin="anonymous"></script>
+
   <!-- tailwind custom classes  -->
   <script>
     tailwind.config = {
@@ -19,15 +29,159 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'btn-primary-color': '#FF4240',
+            'foot-text-primary-color': 'rgba(255, 255, 255, 0.60)',
           }
         }
       }
     }
   </script>
 
+  <!-- CSS styles  -->
+
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="font-monrope">
+  <header class="container pb-56 lg:pb-24">
+    <!-- nav section  -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a> </li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class=" text-sm lg:text-xl">Hockey<span class="text-btn-primary-color"> Club</span></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 ">
+            <li class=" hover:text-btn-primary-color"><a >Home</a></li>
+            <li class=" hover:text-btn-primary-color"><a>About</a> </li>
+            <li class=" hover:text-btn-primary-color"><a>Pages</a></li>
+            <li class=" hover:text-btn-primary-color"><a>Blog</a></li>
+            <li class=" hover:text-btn-primary-color"><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-3">
+          <i class="fa-solid fa-magnifying-glass text-gray-500 hidden lg:inline"></i>
+          <a class="btn text-white bg-btn-primary-color hover:bg-white hover:text-btn-primary-color">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider section  -->
+
+    <section>
+      <div class="carousel w-full my-14 lg:h-[550px]">
+
+        <!-- slide 1 -->
+
+        <div id="slide1" class="carousel-item relative w-full">
+       
+          <img src="Images/1.png" class="w-full  " />
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+
+
+        <!-- slider 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/2.png" class="w-full  " />
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+
+        <!-- slider -3  -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/3.png" class="w-full " />
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+
+      </div>
+      <div class="bg-black text-white absolute w-[400px] right-8  lg:w-[400px] lg:right-14 lg:-bottom-12 rounded-lg p-10  ">
+        <h2 class="text-white text-2xl font-extrabold">Join with us!</h2>
+        <p class="text-[rgba(255, 255, 255, 0.60)] text-xl font-medium">Hockey is the type of a sports where each and every player try to get points hitting an objects.</p>
+      </div>
+    </section>
+
+  </header>
+<main>
+
+</main>
+<!-- footer section  -->
+<footer class="footer p-20 bg-[#131318] text-base-content ">
+  <div class="space-y-4 flex flex-col items-center lg:items-start "  >
+    <h3 class="text-white text-3xl font-extrabold">Get In Touch</h3>
+    <p class="text-foot-text-primary-color text-xs font-medium text-center lg:w-3/5 lg:text-start">Hockey is a kind of invasion game that is played by two teams of eleven players. </p>
+    <div class="flex gap-4">
+      <i class="fa-regular fa-envelope  text-red-700"></i>
+      <h4 class="text-foot-text-primary-color text-xs font-medium">hockeys@support.com</h4>
+    </div>
+
+    <div class="flex gap-4 ">
+      <i class="fa-solid fa-phone  text-red-700"></i>
+
+      <h4 class="text-foot-text-primary-color text-xs font-medium">(+62) 123-321-543</h4>
+    </div>
+    
+
+
+
+  </div> 
+  
+<div class="flex flex-col lg:flex-row  gap-10 lg:gap-36 mx-auto lg:mx-0 ">
+  <div class="flex flex-row text-center lg:text-start gap-10 lg:gap-36 " >
+
+    <div class="text-foot-text-primary-color font-medium text-xs gap-4 flex flex-col">
+      <header class=" text-white text-xl font-bold">Company</header> 
+      <a class="link link-hover ">About us</a>
+      <a class="link link-hover ">Leadership</a>
+      <a class="link link-hover ">Careers</a>
+      <a class="link link-hover ">News & Article</a>
+      <a class="link link-hover ">Legal Notice</a>
+      
+    </div> 
+    <div class="text-foot-text-primary-color font-medium text-xs gap-4 flex flex-col">
+      <header class="text-white text-xl font-bold">Support</header> 
+      <a class="link link-hover ">Help Center</a>
+      <a class="link link-hover ">FAQ</a>
+      <a class="link link-hover ">Ticket Support</a>
+      <a class="link link-hover ">Contact Us</a>
+    </div> 
+   
+
+    </div>
+    <div class="text-foot-text-primary-color font-medium text-xs gap-4 flex flex-col text-center lg:text-start mx-auto lg:mx-0 ">
+      <header class="text-white text-xl font-bold">Services</header> 
+      <a class="link link-hover ">Academy</a>
+      <a class="link link-hover ">Group Lesson</a>
+      <a class="link link-hover">Private Lesson</a>
+      <a class="link link-hover ">Hockeys for kids </a>
+      <a class="link link-hover ">Hockeys for Adult</a>
+    </div>
+</div>
+
+  </div>
+
+</footer>
   
 </body>
 </html>
