@@ -642,7 +642,7 @@
         <hr class="border-dashed">
       </div>
 
-      <div class="flex flex-col  lg:flex-row gap-10 items-center mt-6">
+      <div class="flex  flex-col lg:flex-row gap-10 items-center mt-6">
 
       <div class="space-y-6 border border-lg rounded-lg p-10">
         <div class="bg-green-100 p-4 rounded-lg">
@@ -671,27 +671,29 @@
 
         
 
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5  ">    
+          <div class="grid grid-cols-1  lg:grid-cols-2 gap-5  ">    
 
             <!-- left form  -->
 
-            <div class="flex flex-col gap-2 ">   
+            <div class="flex flex-col ] gap-2 ">   
              
-                  <label for=" text" >Your Name</label>
+                  <label for=" text" class="text-body-text-primary-color text-xl font-bold" >Your Name</label>
   
            
-                  <input type="text" name="your name" placeholder="Enter your full name" class=" input input-bordered bg-gray-100 " >
+                  <input type="text" name="your name" placeholder="Enter your full name" class=" input input-bordered bg-gray-100 text-body-text-primary-color text-xl font-normal " >
     
       
   
               </div>
   
-              <div class="flex flex-col gap-2 >
+              <div class="flex flex-col gap-2" >
+
+                <label for=" text" class="text-body-text-primary-color text-xl font-bold" >Subject</label>
   
-                  <label for=" text" >Subject</label>
+                 
     
     
-                  <input type="text" name="text" placeholder="Enter your subject" class=" input input-bordered bg-gray-100" >
+                  <input type="text" name="text" placeholder="Enter your subject" class=" input input-bordered bg-gray-100 text-body-text-primary-color text-xl font-normal" >
     
   
               </div>
@@ -703,11 +705,11 @@
 
                 <div class="flex flex-col gap-2  ">
     
-                    <label for=" text" >Your Email</label>
+                    <label for=" text" class="text-body-text-primary-color text-xl font-bold" >Your Email</label>
       
           
 
-                    <input type="email" name="" id="" placeholder="Enter your email" class=" input input-bordered  bg-gray-100">
+                    <input type="email" name="" id="" placeholder="Enter your email" class=" input input-bordered  bg-gray-100 text-body-text-primary-color text-xl font-normal">
          
     
                 </div>
@@ -717,10 +719,10 @@
                 <div class="flex flex-col gap-2 ">
     
                 
-                    <label for=" text" >Phone</label>
+                    <label for=" text" class="text-body-text-primary-color text-xl font-bold" >Phone</label>
       
              
-                    <input type="text" name="text" placeholder="Enter your phone number" class=" input input-bordered bg-gray-100 " >
+                    <input type="text" name="text" placeholder="Enter your phone number" class=" input input-bordered bg-gray-100 text-body-text-primary-color text-xl font-normal " >
       
     
                 </div>
@@ -732,10 +734,10 @@
           <div class="flex flex-col space-y-8">
 
           
-              <label for="">Message</label>
+              <label for="" class="text-body-text-primary-color text-xl font-bold">Message</label>
 
         
-              <textarea class="textarea textarea-bordered p-3 bg-gray-100" placeholder="Message" col="30" row="10"></textarea>
+              <textarea class="textarea textarea-bordered p-3 bg-gray-100 text-body-text-primary-color text-xl font-normal" placeholder="Message" col="30" row="10"></textarea>
 
             </div>
 
@@ -748,6 +750,23 @@
 
     </div>
   
+    </section>
+    <!-- social media section  -->
+
+    <section class="flex justify-between flex-col items-center text-center gap-4 bg-[#13131808] rounded-lg pt-6 pb-10 ">
+
+      
+      <h2 class="text-center text-[#131318] font-extrabold text-2xl lg:text-3xl my-5">Social Media</h2>
+        
+    
+
+      <div class=" flex justify-center gap-5 text-2xl">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+
     </section>
 
 </main>
